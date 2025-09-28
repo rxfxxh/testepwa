@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Login</h1>
+        <h2>Entre na sua conta</h2>
+            
+        <form class="dados">
+            <input type="email" placeholder="Digite seu Email">
+            <input type="password" placeholder="Digite sua Senha" >
+            <a href="#">Esqueceu sua senha?</a>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="verificacao" style="display:none;">
+        <p>Digite o código enviado para seu email:</p>
+        <input type="text" id="codigo2fa" placeholder="Código de 6 dígitos">
+        <button onclick="verificarCodigo()">Verificar</button>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

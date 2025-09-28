@@ -5,9 +5,9 @@ self.addEventListener('install', function(event){
         caches.open(cacheName).then(function (cache){
             cache.addAll([
                 './',
-                './sobre.html',
-                './manifest.webmanifest',
-                './index.js'
+                './index.html',
+                './manifest.json',
+                './sw.js'
             ])
         })
     )
@@ -46,4 +46,5 @@ async function networkAndCache(req){
         const cached = await cache.match(req);
         return cached
     }
+
 }
